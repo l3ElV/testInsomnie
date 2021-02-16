@@ -158,6 +158,6 @@ footer .subscribeButton span {
 
 @media screen and (min-width: 1200px) {
     :root {
-        --scale: 0.75;
+        --scale: 0.55;
     }
 }
