@@ -161,18 +161,11 @@ footer .subscribeButton span {
 }
 
 #popUpEmailFormWrapper {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
 }
 
 #popUpEmailForm {
     width: 100%;
     max-width: 600px;
-    position: fixed;
-    margin: auto;
 }
 
 #popUpEmailForm section {
