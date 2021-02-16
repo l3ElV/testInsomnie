@@ -84,13 +84,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </ul>
         </div>
         <div>
-            <button class="subscribeButton" onclick="document.querySelector('header .popUpEmailForm').style['display'] = 'initial'">
+            <button class="subscribeButton" onclick="document.querySelector('header .popUpEmailForm').style['display'] = 'inherit'">
                 Je rejoins le programme <br><span>(cliquez-moi !)</span>
             </button>
-            <div class="popUpEmailForm">
-                <script id="form-script-tag-1408328" src="https://systeme.io/public/remote/page/20521618426548db18fa8e9ce914595565f7c22.js"></script>
+            <div class="popUpEmailForm" style="display: none">
+                <script id="form-script-tag-1408328" src="https://systeme.io/public/remote/page/20521618426548db18fa8e9ce914595565f7c22.js">document.querySelector('header .popUpEmailForm').style['display'] = 'none!important'";</script>
             </div>
-            <script type="text/javascript">window.onload = document.querySelector('header .popUpEmailForm').style['display'] = 'none!important'"</script>
+          <!--   <script type="text/javascript">window.onload = document.querySelector('header .popUpEmailForm').style['display'] = 'none!important'"</script> -->
         </div>
     </header>
     <div class="content">
