@@ -74,6 +74,10 @@ header {
     height: 100%;
 }
 
+.contentSumUp .title {
+    margin: 100px;
+}
+
 .subscribeButton {
     background-color: white;
     color: rgb(21, 55, 133);
