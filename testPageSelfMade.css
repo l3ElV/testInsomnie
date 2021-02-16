@@ -161,7 +161,7 @@ footer .subscribeButton span {
 }
 
 #popUpEmailForm {
-    display: none;
+    /*display: none;*/
 }
 
 /*#popUpEmailForm > * {
