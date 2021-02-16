@@ -21,6 +21,10 @@ html {
     width: 100vw;
 }
 
+:root {
+    --scale: 1;
+}
+
 /*BODYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
 
 body > * {
@@ -45,13 +49,13 @@ header {
 }
 
 .title {
-    font-size: 6rem;
+    font-size: calc(var(--scale) * 6rem);
     line-height: 90%;
 }
 
 .subtitle {
     margin: 100px 0px;
-    font-size: 3rem;
+    font-size: calc(var(--scale) * 3rem);
 }
 
 .mediaWrapper {
@@ -74,23 +78,23 @@ header {
     background-color: white;
     color: rgb(21, 55, 133);
     padding: 50px;
-    font: 5rem Passion One Regular;
+    font: calc(var(--scale) * 5rem) Passion One Regular;
     border-radius: 10px;
-    margin: 6rem 0px;
+    margin: calc(var(--scale) * 6rem) 0px;
     text-transform: uppercase;
     line-height: 75%;
     cursor: pointer;
 }
 
 .subscribeButton span {
-    font-size: 2.5rem;
+    font-size: 2calc (var(--scale) * 5rem);
     font-weight: bold;
     font-family: "Montserrat";
 }
 
 .contentSumUp li {
     margin: 50px 0px;
-    font-size: 3rem;
+    font-size: calc(var(--scale) * 3rem);
     font-weight: 100 !important;
     text-align: left;
     font-family: "Montserrat";
@@ -120,7 +124,7 @@ header {
         rgb(0 0 0 / 40%) 0px 0px 3px;
 }
 .moduleInfo {
-    font-size: 4rem;
+    font-size: calc(var(--scale) * 4rem);
     text-transform: uppercase;
     margin-top: 30px;
 }
@@ -129,12 +133,12 @@ header {
     margin-bottom: 30px;
 }
 .moduleInfo p {
-    font-size: 4rem;
+    font-size: calc(var(--scale) * 4rem);
 }
 .moduleInfo p span {
     text-transform: initial;
     font-family: "Montserrat";
-    font-size: 2.5rem;
+    font-size: 2calc (var(--scale) * 5rem);
     font-weight: bold;
 }
 
@@ -153,7 +157,7 @@ footer .subscribeButton span {
 }
 
 @media screen and (min-width: 1200px) {
-    body > * {
-        transform: scale(0.8);
+    :root {
+        --scale: 0.5;
     }
 }
