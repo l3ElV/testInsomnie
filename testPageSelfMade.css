@@ -160,14 +160,19 @@ footer .subscribeButton span {
     margin-bottom: 40px;
 }
 
-#popUpEmailForm {
+/*#popUpEmailForm {
+    display: none;
     position: absolute;
     left: 50%;
-}
+}*/
 
-#popUpEmailForm > * {
+/*#popUpEmailForm > * {
     position: relative;
     left: -50%;
+}*/
+
+#popUpEmailForm section {
+    background-color: initial;
 }
 
 @media screen and (min-width: 1200px) {
