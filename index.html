@@ -1,287 +1,219 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>mon test slefmade page</title>
 
-<!-- css formater -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
-		/>
-		<link href="./testPageSelfMade.css" rel="stylesheet" />
-<!-- Foot Google Montserrat -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-			rel="stylesheet"
-		/>
-<!-- ============================================GOOGLE============================================ -->
+<head>
+    <title>mon test slefmade page</title>
+    <!-- css formater -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" />
+    <link href="./testPageSelfMade.css" rel="stylesheet" />
+    <!-- Foot Google Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <!-- ============================================GOOGLE============================================ -->
+    <!-- Global site tag (gtag.js) - Google Ads: 476652110 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-476652110"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-		<!-- Global site tag (gtag.js) - Google Ads: 476652110 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-476652110"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-476652110');
-</script>
-
-<!-- Event snippet for Page vue- FR-DISPLAY-Campagne Express conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-476652110/OkK4CIu95PUBEM7EpOMB'});
-</script>
-
-<!-- Event snippet for Sign-up FR-DISPLAY-Campagne Express 13.02  2eme Round conversion page
+    gtag('config', 'AW-476652110');
+    </script>
+    <!-- Event snippet for Page vue- FR-DISPLAY-Campagne Express conversion page -->
+    <script>
+    gtag('event', 'conversion', { 'send_to': 'AW-476652110/OkK4CIu95PUBEM7EpOMB' });
+    </script>
+    <!-- Event snippet for Sign-up FR-DISPLAY-Campagne Express 13.02  2eme Round conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+    <script>
+    function gtag_report_conversion(url) {
+        var callback = function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-476652110/SWeECJHP5PUBEM7EpOMB',
+            'event_callback': callback
+        });
+        return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-476652110/SWeECJHP5PUBEM7EpOMB',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-<!-- ============================================GOOGLE END============================================ -->
+    </script>
+    <!-- ============================================GOOGLE END============================================ -->
+    <!--First two scrips = cookie dependencies-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</head>
 
-<!--First two scrips = cookie dependencies-->
-<script
-	type="text/javascript"
-	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
-></script>
-<script
-	type="text/javascript"
-	src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"
-></script>
+<body>
+    <header>
+        <div>
+            <p class="title">
+                Comment
+                <u>arrêter les insomnies</u> et retrouver un
+                <u>sommeil réparateur</u>
+            </p>
+            <h2 class="subtitle">
+                Ma méthode scientifique en 11 vidéos GRATUITES
+            </h2>
+        </div>
+        <video autoplay="true" muted="true" controls preload="auto">
+            <source src="./présentationOld.mp4" type="video/mp4">
+        </video>
+        <div class="contentSumUp">
+            <h2 class="title">Ce Que Tu Vas Obtenir:</h2>
+            <ul>
+                <li>
+                    <strong>📚 7 outils SCIENTIFIQUES </strong> pour un
+                    <u>sommeil profond et réparateur</u>
+                </li>
+                <li>
+                    <strong>📑 Mes Protocoles </strong>pour éliminer la
+                    <u>peur de ne pas réussir à dormir</u>
+                </li>
+                <li>
+                    <strong>⛔ Comment STOPPER </strong><u>le cercle vicieux</u>
+                    de l'insomnie
+                </li>
+                <li>
+                    <strong>💌 BONUS: </strong>
+                    <u>Mes conseils Anti-Insomnie</u> exclusifs que j'envoie
+                    UNIQUEMENT sur <strong>Les mails Insomniaques™</strong>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button class="subscribeButton" onclick="document.getElementById('popUpEmailForm').style['display'] = 'initial'">
+                Je rejoins le programme <br><span>(cliquez-moi !)</span>
+            </button>
+        </div>
+    </header>
+    <div id="popUpEmailFormWrapper">
+        <div id="popUpEmailForm">
+            <script id="form-script-tag-1407143" src="https://systeme.io/public/remote/page/20503172dc5c9e5fa1e1789f8d23b6540256f26.js"></script>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <h2 class="title">Ce que tu vas découvrir:</h2>
+        </div>
+        <div>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module1 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°1</h2>
+                    <p>INSOMNIE VS INSOMNIE CHRONIQUE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module2 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°2</h2>
+                    <p>LES 3 MÉCANISMES INCOMPRIS DU SOMMEIL</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module3 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°3</h2>
+                    <p>LES 4 ÉTAPES INÉVITABLES DE L'INSOMNIE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module4 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°4</h2>
+                    <p>LE MYTHE DES 8H</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module5 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°5</h2>
+                    <p>LA PREMIERE ÉTAPE POUR SORTIR DU CERCLE VICIEUX</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module6 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°6</h2>
+                    <p>LES MAUVAIS CONSEILS À NE PAS ÉCOUTER</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module7 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°7</h2>
+                    <p>LES BONS CONSEILS À ÉCOUTER</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module8 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°8</h2>
+                    <p>LA TECHNIQUE DE L'ANCRAGE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module9 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°9</h2>
+                    <p>FAIRE LA PAIX AVEC SON LIT</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module10 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°10</h2>
+                    <p>5 MÉTHODES PSYCHOLOGIQUES ANTI-INSOMNIE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module11 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°11</h2>
+                    <p>CE QUE TU DOIS ABSOLUMENT SAVOIR SUR L'INSOMNIE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module12 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°12</h2>
+                    <p>VIDÉO BONUS: [CONTENU EXCLUSIF]<br><span>(Disponible UNIQUEMENT en rejoignant le cours)</span></p>
+                    <div>
+            </article>
+        </div>
+        <footer>
+            <button onclick="document.getElementById('popUpEmailForm').style['display'] = 'initial'" class="subscribeButton">
+                Je rejoins le programme <br><span>(cliquez-moi !)</span>
+            </button>
+        </footer>
+    </div>
+</body>
 
-<script
-	type="text/javascript"
-	src="./index.js"
-></script>
-
-
-	</head>
-	<body>
-		
-		<header>
-			<div>
-				<p class="title">
-					Comment
-					<u>arrêter les insomnies</u> et retrouver un
-					<u>sommeil réparateur</u>
-				</p>
-				<h2 class="subtitle">
-					Ma méthode scientifique en 11 vidéos GRATUITES
-				</h2>
-			</div>
-			<video  autoplay="true" muted="true" controls preload="auto">
-				<source src="./présentationOld.mp4" type="video/mp4"> 
-			</video>
-			<div class="contentSumUp">
-				<h2 class="title">Ce Que Tu Vas Obtenir:</h2>
-				<ul>
-					<li>
-						<strong>📚 7 outils SCIENTIFIQUES </strong> pour un
-						<u>sommeil profond et réparateur</u>
-					</li>
-					<li>
-						<strong>📑 Mes Protocoles </strong>pour éliminer la
-						<u>peur de ne pas réussir à dormir</u>
-					</li>
-					<li>
-						<strong>⛔ Comment STOPPER </strong
-						><u>le cercle vicieux</u>
-						de l'insomnie
-					</li>
-					<li>
-						<strong>💌 BONUS: </strong>
-						<u>Mes conseils Anti-Insomnie</u> exclusifs que j'envoie
-						UNIQUEMENT sur <strong>Les mails Insomniaques™</strong>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<button class="subscribeButton"  onclick="document.getElementById('popUpEmailForm').style['display'] = 'initial'">
-					Je rejoins le programme <br><span>(cliquez-moi !)</span>
-				</button>
-			</div>
-		</header>
-		<div id="popUpEmailForm">
-<script id="form-script-tag-1407143" src="https://systeme.io/public/remote/page/20503172dc5c9e5fa1e1789f8d23b6540256f26.js"></script>
-		</div>
-		<div class="content">
-			<div><h2 class="title">Ce que tu vas découvrir:</h2></div>
-			<div>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module1 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°1</h2>
-						<p>INSOMNIE VS INSOMNIE CHRONIQUE</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module2 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°2</h2>
-						<p>LES 3 MÉCANISMES INCOMPRIS DU SOMMEIL</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module3 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°3</h2>
-						<p>LES 4 ÉTAPES INÉVITABLES DE L'INSOMNIE</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module4 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°4</h2>
-						<p>LE MYTHE DES 8H</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module5 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°5</h2>
-						<p>LA PREMIERE ÉTAPE POUR SORTIR DU CERCLE VICIEUX</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module6 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°6</h2>
-						<p>LES MAUVAIS CONSEILS À NE PAS ÉCOUTER</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module7 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°7</h2>
-						<p>LES BONS CONSEILS À ÉCOUTER</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module8 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°8</h2>
-						<p>LA TECHNIQUE DE L'ANCRAGE</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module9 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°9</h2>
-						<p>FAIRE LA PAIX AVEC SON LIT</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module10 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°10</h2>
-						<p>5 MÉTHODES PSYCHOLOGIQUES ANTI-INSOMNIE</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module11 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°11</h2>
-						<p>CE QUE TU DOIS ABSOLUMENT SAVOIR SUR L'INSOMNIE</p>
-					<div>
-				</article>
-				<article>
-					<div class="mediaWrapper">
-						<img
-							class="mediaContent"
-							loading="lazy"
-							src="./Images/module12 COMPRESSED - CUTER.png"
-						/>
-					</div>
-					<div class="moduleInfo">
-						<h2>Module n°12</h2>
-						<p>VIDÉO BONUS: [CONTENU EXCLUSIF]<br><span>(Disponible UNIQUEMENT en rejoignant le cours)</span></p>
-					<div>
-				</article>
-
-
-			</div>
-			<footer>
-				<button onclick="document.getElementById('popUpEmailForm').style['display'] = 'initial'" class="subscribeButton">
-					Je rejoins le programme <br><span>(cliquez-moi !)</span>
-				</button>
-			</footer>
-		</div>
-	
-	</body>
 </html>
