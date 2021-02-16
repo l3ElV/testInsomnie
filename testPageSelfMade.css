@@ -152,8 +152,8 @@ footer .subscribeButton span {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 901px) {
-    body {
+@media screen and (min-width: 1200px) {
+    body > * {
         transform: scale(0.8);
     }
 }
