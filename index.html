@@ -106,12 +106,12 @@ function gtag_report_conversion(url) {
 				</ul>
 			</div>
 			<div>
-				<button class="subscribeButton">
+				<button class="subscribeButton"  onclick="document.getElementById('popUpEmailForm').style['display'] = 'initial'">
 					Je rejoins le programme <br><span>(cliquez-moi !)</span>
 				</button>
 			</div>
 		</header>
-		<div style="display: none;" id="popUpEmailForm">
+		<div id="popUpEmailForm">
 <script id="form-script-tag-1407143" src="https://systeme.io/public/remote/page/20503172dc5c9e5fa1e1789f8d23b6540256f26.js"></script>
 		</div>
 		<div class="content">
@@ -277,7 +277,7 @@ function gtag_report_conversion(url) {
 
 			</div>
 			<footer>
-				<button class="subscribeButton">
+				<button onclick="document.getElementById('popUpEmailForm').style['display'] = 'initial'" class="subscribeButton">
 					Je rejoins le programme <br><span>(cliquez-moi !)</span>
 				</button>
 			</footer>
