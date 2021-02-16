@@ -87,7 +87,7 @@ header {
 }
 
 .subscribeButton span {
-    font-size: 2calc (var(--scale) * 5rem);
+    font-size: calc(var(--scale) * 2.5rem);
     font-weight: bold;
     font-family: "Montserrat";
 }
@@ -138,7 +138,7 @@ header {
 .moduleInfo p span {
     text-transform: initial;
     font-family: "Montserrat";
-    font-size: 2calc (var(--scale) * 5rem);
+    font-size: calc(var(--scale) * 2.5rem);
     font-weight: bold;
 }
 
@@ -154,6 +154,16 @@ footer .subscribeButton span {
 
 .content article:last-child {
     margin-bottom: 40px;
+}
+
+#popUpEmailForm {
+    position: absolute;
+    left: 50%;
+}
+
+#popUpEmailForm > * {
+    position: relative;
+    left: -50%;
 }
 
 @media screen and (min-width: 1200px) {
