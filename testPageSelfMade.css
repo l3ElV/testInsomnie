@@ -2,6 +2,7 @@
     font-family: Passion One Regular;
     src: url(./passion-one/PassionOne-Regular.otf);
 }
+
 @font-face {
     font-family: Passion One Bold;
     src: url(./passion-one/PassionOne-Bold.otf);
@@ -17,6 +18,7 @@ body {
     max-width: 900px !important;
     box-sizing: border-box !important;
 }
+
 html {
     width: 100vw;
 }
@@ -27,7 +29,7 @@ html {
 
 /*BODYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
 
-body > * {
+body>* {
     padding: 50px 25px 100px 25px;
 }
 
@@ -60,12 +62,15 @@ header {
 
 .mediaWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     height: 0;
 }
+
 .mediaWrapper .videoWrapper {
     width: 100%;
 }
+
 .mediaWrapper .mediaContent {
     position: absolute;
     top: 0;
@@ -127,18 +132,22 @@ header {
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 25px, rgb(0 0 0 / 20%) 0px 0px 15px,
         rgb(0 0 0 / 40%) 0px 0px 3px;
 }
+
 .moduleInfo {
     font-size: calc(var(--scale) * 4rem);
     text-transform: uppercase;
     margin-top: 30px;
 }
+
 .moduleInfo h2 {
     color: rgba(9, 61, 124, 1);
     margin-bottom: 30px;
 }
+
 .moduleInfo p {
     font-size: calc(var(--scale) * 4rem);
 }
+
 .moduleInfo p span {
     text-transform: initial;
     font-family: "Montserrat";
@@ -165,42 +174,48 @@ footer .subscribeButton span {
 }
 
 #crossPopUpWrapper {
-background: rgba(20, 52, 253, 0.5) none repeat scroll 0% 0%;
-position: fixed;
-overflow-y: scroll;
-inset: 0px;
-width: 100%;
-display: initial;
-transform: scale(1.6);
+    background: rgba(20, 52, 253, 0.5) none repeat scroll 0% 0%;
+    position: fixed;
+    overflow-y: scroll;
+    inset: 0px;
+    width: 100%;
+    display: initial;
+    transform: scale(1.6);
 
-pointer-events: none;
+    pointer-events: none;
 }
 
 #fakePopUpIframe {
-display: block;
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-height: 317px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 317px;
 
-background: color: rgba(9, 61, 124, 0.5);
+    background: color: rgba(9, 61, 124, 0.5);
 }
 
-#fakeDivWrapper{
-position: relative;
-display: block;
-max-width: 600px;
-max-height: 100%;
-width: 100vw;
-height: 317px;
+#fakeDivWrapper {
+    position: relative;
+    display: block;
+    max-width: 600px;
+    max-height: 100%;
+    width: 100vw;
+    height: 317px;
 
 }
 
-#crossPopUp{
+#crossPopUp {
 
     pointer-events: initial;
-    transform: scale(0.5);
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translate(0%, -50%);
 }
 
 @media screen and (min-width: 1200px) {
@@ -208,6 +223,3 @@ height: 317px;
         --scale: 0.55;
     }
 }
-
-
-
