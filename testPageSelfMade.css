@@ -163,14 +163,19 @@ footer .subscribeButton span {
 .popUpEmailForm {
     margin: 50px 0px;
 }
-
-#crossPopUp {
+#crossPopUpWrapper {
     position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#crossPopUp {
+    position: fixed;
     top: 0px;
     right: 0px;
     transform: scale(2);
     color: red;
     font-weight: bold;
+    z-index: 9999;
 }
 
 @media screen and (min-width: 1200px) {
