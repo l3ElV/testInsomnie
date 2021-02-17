@@ -29,7 +29,7 @@ html {
 
 /*BODYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
 
-body>* {
+body > * {
     padding: 50px 25px 100px 25px;
 }
 
@@ -181,8 +181,9 @@ footer .subscribeButton span {
     width: 100%;
     display: initial;
     transform: scale(1.6);
-
     pointer-events: none;
+
+    display: none;
 }
 
 #fakePopUpIframe {
@@ -192,8 +193,6 @@ footer .subscribeButton span {
     top: 50%;
     transform: translate(-50%, -50%);
     height: 317px;
-
-    background: color: rgba(9, 61, 124, 0.5);
 }
 
 #fakeDivWrapper {
@@ -203,11 +202,9 @@ footer .subscribeButton span {
     max-height: 100%;
     width: 100vw;
     height: 317px;
-
 }
 
 #crossPopUp {
-
     pointer-events: initial;
     width: 100px;
     height: 100px;
