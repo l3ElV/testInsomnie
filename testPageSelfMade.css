@@ -216,6 +216,8 @@ footer .subscribeButton span {
     top: 0px;
     right: 0px;
     transform: translate(0%, -50%);
+
+    padding: 10px;
 }
 
 @media screen and (min-width: 1200px) {
