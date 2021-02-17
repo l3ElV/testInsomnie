@@ -59,10 +59,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </h2>
         </div>
         <div>
-        <video autoplay="true" muted="true" controls preload="auto">
-            <source src="./présentationOld.mp4" type="video/mp4">
-        </video>
-        <button class="subscribeButton" onclick="document.querySelector('video').muted = !document.querySelector('video').muted;">METTRE LE SON</button>
+            <video autoplay="true" muted="true" controls preload="auto">
+                <source src="./présentationOld.mp4" type="video/mp4">
+            </video>
+            <button class="subscribeButton" onclick="document.querySelector('video').muted = !document.querySelector('video').muted;">METTRE LE SON</button>
         </div>
         <div class="contentSumUp">
             <h2 class="title">Ce Que Tu Vas Obtenir:</h2>
@@ -87,46 +87,48 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </ul>
         </div>
         <div>
-<!--             <button class="subscribeButton" onclick="document.querySelector('header .popUpEmailForm').style['display'] = 'inherit'">
+            <!--             <button class="subscribeButton" onclick="document.querySelector('header .popUpEmailForm').style['display'] = 'inherit'">
                 Je rejoins le programme <br><span>(cliquez-moi !)</span>
             </button> -->
             <div id="crossPopUpWrapper">
-            <button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none"'>XXXXXXXXXXXXX</button></div>
-<a href="#" class="systeme-show-popup-1410341" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "initial";'>Cliquez ici</a><script id="form-script-tag-1410341" src="https://systeme.io/public/remote/page/205531059b2ecdb1f943e849d40197e9a69e60d.js"></script>
- <!--            <script type="text/javascript">
+                <button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none"'>XXXXXXXXXXXXX</button></div>
+            <a href="#" class="systeme-show-popup-1410341" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "initial";'>Cliquez ici</a>
+            <script id="form-script-tag-1410341" src="https://systeme.io/public/remote/page/205531059b2ecdb1f943e849d40197e9a69e60d.js"></script>
+            <!--            <script type="text/javascript">
             window.onload = document.querySelector('header .popUpEmailForm').style['display'] = 'none!important';
             console.log('script deuxieme script a run');
             </script> -->
         </div>
         <script type="text/javascript"></script>
-       
-      <!--   <script type="text/javascript">document.querySelector("div > div > iframe").parentElement.parentElement.style.background = "rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%";</script> -->
+        <!--   <script type="text/javascript">document.querySelector("div > div > iframe").parentElement.parentElement.style.background = "rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%";</script> -->
         <script type="text/javascript">
+        //handle body inline styles changes
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutationRecord) {
+                document.querySelector('body').style.position = "initial";
 
-//handle body inline styles changes
-var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutationRecord) {
-        document.querySelector('body').style.position = "initial";
+            });
+        });
 
-    });    
-});
+        var target = document.querySelector('body');
+        observer.observe(target, { attributes: true, attributeFilter: ['style'] });
 
-var target = document.querySelector('body');
-observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+        //handle iframe parent parentElement inline styles changes
 
-//handle iframe parent parentElement inline styles changes
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutationRecord) {
 
-var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutationRecord) {
-       let zIndexDouilleur =  document.querySelector("div > div > iframe").parentElement.parentElement.style.zIndex;
-       document.querySelector('#crossPopUp').style.zIndex = zIndexDouilleur + 5;
+            	document.querySelector("div > div > iframe").parentElement.parentElement.style.transform = "scale(1.6)";
 
-    });    
-});
+                let zIndexDouilleur = document.querySelector("div > div > iframe").parentElement.parentElement.style.zIndex;
+				document.querySelector('#crossPopUp').style.zIndex = zIndexDouilleur + 5;
 
-var target = document.querySelector("div > div > iframe").parentElement.parentElement;
-observer.observe(target, { attributes : true, attributeFilter : ['style'] });
-    </script>
+            });
+        });
+
+        var target = document.querySelector("div > div > iframe").parentElement.parentElement;
+        observer.observe(target, { attributes: true, attributeFilter: ['style'] });
+        </script>
     </header>
     <div class="content">
         <div>
@@ -243,24 +245,22 @@ observer.observe(target, { attributes : true, attributeFilter : ['style'] });
             </article>
         </div>
         <footer>
-<!--             <button onclick="document.querySelector('footer .popUpEmailForm').style['visibility'] = 'initial'" class="subscribeButton">
+            <!--             <button onclick="document.querySelector('footer .popUpEmailForm').style['visibility'] = 'initial'" class="subscribeButton">
                 Je rejoins le programme <br><span>(cliquez-moi !)</span>
             </button> -->
             <div class="popUpEmailForm">
                 <script id="form-script-tag-1408328" src="https://systeme.io/public/remote/page/20521618426548db18fa8e9ce914595565f7c22.js"></script>
             </div>
-  <!--           <script type="text/javascript">
+            <!--           <script type="text/javascript">
             document.querySelector('footer .popUpEmailForm').style['visibility'] = 'hidden'
             </script> -->
         </footer>
     </div>
     <style type="text/css">
-    	
-    	.sc-jKJlTe{
+    .sc-jKJlTe {
 
-    		width: auto!important;
-    	}
-
+        width: auto !important;
+    }
     </style>
 </body>
 
