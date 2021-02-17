@@ -91,7 +91,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 Je rejoins le programme <br><span>(cliquez-moi !)</span>
             </button> -->
             <div id="crossPopUpWrapper">
-                <button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none"'>XXXXXXXXXXXXX</button></div>
+                <div id="fakePopUpIframe">
+                	<div id="fakeDivWrapper">
+                    	<button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none"'>XXXXXXXXXXXXX</button>
+                	</div>
+                </div>
+            </div>
             <a href="#" class="systeme-show-popup-1410341" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "initial";'>Cliquez ici</a>
             <script id="form-script-tag-1410341" src="https://systeme.io/public/remote/page/205531059b2ecdb1f943e849d40197e9a69e60d.js"></script>
             <!--            <script type="text/javascript">
@@ -118,10 +123,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         var observer = new MutationObserver(function(mutations) {
             mutations.forEach(function(mutationRecord) {
 
-            	document.querySelector("div > div > iframe").parentElement.parentElement.style.transform = "scale(1.6)";
+                document.querySelector("div > div > iframe").parentElement.parentElement.style.transform = "scale(1.6)";
 
                 let zIndexDouilleur = document.querySelector("div > div > iframe").parentElement.parentElement.style.zIndex;
-				document.querySelector('#crossPopUp').style.zIndex = zIndexDouilleur + 5;
+                document.querySelector('#crossPopUp').style.zIndex = zIndexDouilleur + 5;
 
             });
         });
