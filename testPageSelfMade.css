@@ -164,6 +164,15 @@ footer .subscribeButton span {
     margin: 50px 0px;
 }
 
+#crossPopUp {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: scale(2);
+    color: red;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 1200px) {
     :root {
         --scale: 0.55;
