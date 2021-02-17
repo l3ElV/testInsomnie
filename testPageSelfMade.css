@@ -170,12 +170,13 @@ footer .subscribeButton span {
 }
 #crossPopUp {
     position: fixed;
-    top: 0px;
-    right: 0px;
-    transform: scale(2);
     color: red;
     font-weight: bold;
     z-index: 99;
+
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1200px) {
