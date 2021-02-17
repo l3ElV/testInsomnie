@@ -1,185 +1,241 @@
-@font-face {
-    font-family: Passion One Regular;
-    src: url(./passion-one/PassionOne-Regular.otf);
-}
-@font-face {
-    font-family: Passion One Bold;
-    src: url(./passion-one/PassionOne-Bold.otf);
-}
+<!DOCTYPE html>
+<html>
 
-/*BODYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
+<head>
+    <title>mon test slefmade page</title>
+    <!-- css formater -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" />
+    <link href="./testPageSelfMade.css" rel="stylesheet" />
+    <!-- Foot Google Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <!-- ============================================GOOGLE============================================ -->
+    <!-- Global site tag (gtag.js) - Google Ads: 476652110 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-476652110"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-body {
-    font-family: Passion One Regular;
-    margin: auto;
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 900px !important;
-    box-sizing: border-box !important;
-}
-html {
-    width: 100vw;
-}
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-:root {
-    --scale: 1;
-}
-
-/*BODYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
-
-body > * {
-    padding: 50px 25px 100px 25px;
-}
-
-* {
-    text-align: center;
-}
-
-header {
-    width: 100%;
-    box-shadow: none;
-
-    background-size: cover;
-    background-position: center;
-    background-image: url("./Images/backgroundTopPage COMPRESSED.png");
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-.title {
-    font-size: calc(var(--scale) * 6rem);
-    line-height: 90%;
-}
-
-.subtitle {
-    margin: 100px 0px;
-    font-size: calc(var(--scale) * 3rem);
-}
-
-.mediaWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-}
-.mediaWrapper .videoWrapper {
-    width: 100%;
-}
-.mediaWrapper .mediaContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.contentSumUp .title {
-    margin: 100px;
-}
-
-.subscribeButton {
-    background-color: white;
-    color: rgb(21, 55, 133);
-    padding: 50px;
-    font: calc(var(--scale) * 5rem) Passion One Regular;
-    border-radius: 10px;
-    margin: calc(var(--scale) * 6rem) 0px;
-    text-transform: uppercase;
-    line-height: 75%;
-    cursor: pointer;
-}
-
-.subscribeButton span {
-    font-size: calc(var(--scale) * 2.5rem);
-    font-weight: bold;
-    font-family: "Montserrat";
-}
-
-.contentSumUp li {
-    margin: 50px 0px;
-    font-size: calc(var(--scale) * 3rem);
-    font-weight: 100 !important;
-    text-align: left;
-    font-family: "Montserrat";
-}
-
-.contentSumUp ul {
-    margin-top: 100px;
-}
-
-.content article {
-    width: 100%;
-    height: 100%;
-}
-
-.content article {
-    padding: 30px;
-    margin: 150px 0px;
-}
-
-.content article img {
-    display: block;
-    max-width: 100%;
-    object-fit: contain;
-    height: 100%;
-    width: 319.469px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 0px 25px, rgb(0 0 0 / 20%) 0px 0px 15px,
-        rgb(0 0 0 / 40%) 0px 0px 3px;
-}
-.moduleInfo {
-    font-size: calc(var(--scale) * 4rem);
-    text-transform: uppercase;
-    margin-top: 30px;
-}
-.moduleInfo h2 {
-    color: rgba(9, 61, 124, 1);
-    margin-bottom: 30px;
-}
-.moduleInfo p {
-    font-size: calc(var(--scale) * 4rem);
-}
-.moduleInfo p span {
-    text-transform: initial;
-    font-family: "Montserrat";
-    font-size: calc(var(--scale) * 2.5rem);
-    font-weight: bold;
-}
-
-footer .subscribeButton {
-    color: white;
-    background-color: rgb(21, 55, 133);
-    margin: 0px;
-}
-
-footer .subscribeButton span {
-    font-weight: lighter;
-}
-
-.content article:last-child {
-    margin-bottom: 40px;
-}
-
-.popUpEmailForm {
-    margin: 50px 0px;
-}
-#crossPopUpWrapper {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-#crossPopUp {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    transform: scale(2);
-    color: red;
-    font-weight: bold;
-    z-index: 999999999;
-}
-
-@media screen and (min-width: 1200px) {
-    :root {
-        --scale: 0.55;
+    gtag('config', 'AW-476652110');
+    </script>
+    <!-- Event snippet for Page vue- FR-DISPLAY-Campagne Express conversion page -->
+    <script>
+    gtag('event', 'conversion', { 'send_to': 'AW-476652110/OkK4CIu95PUBEM7EpOMB' });
+    </script>
+    <!-- Event snippet for Sign-up FR-DISPLAY-Campagne Express 13.02  2eme Round conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+        var callback = function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-476652110/SWeECJHP5PUBEM7EpOMB',
+            'event_callback': callback
+        });
+        return false;
     }
-}
+    </script>
+    <!-- ============================================GOOGLE END============================================ -->
+    <!--First two scrips = cookie dependencies-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p class="title">
+                Comment
+                <u>arrêter les insomnies</u> et retrouver un
+                <u>sommeil réparateur</u>
+            </p>
+            <h2 class="subtitle">
+                Ma méthode scientifique en 11 vidéos GRATUITES
+            </h2>
+        </div>
+        <div>
+        <video autoplay="true" muted="true" controls preload="auto">
+            <source src="./présentationOld.mp4" type="video/mp4">
+        </video>
+        <button class="subscribeButton" onclick="document.querySelector('video').muted = !document.querySelector('video').muted;">METTRE LE SON</button>
+        </div>
+        <div class="contentSumUp">
+            <h2 class="title">Ce Que Tu Vas Obtenir:</h2>
+            <ul>
+                <li>
+                    <strong>📚 7 outils SCIENTIFIQUES </strong> pour un
+                    <u>sommeil profond et réparateur</u>
+                </li>
+                <li>
+                    <strong>📑 Mes Protocoles </strong>pour éliminer la
+                    <u>peur de ne pas réussir à dormir</u>
+                </li>
+                <li>
+                    <strong>⛔ Comment STOPPER </strong><u>le cercle vicieux</u>
+                    de l'insomnie
+                </li>
+                <li>
+                    <strong>💌 BONUS: </strong>
+                    <u>Mes conseils Anti-Insomnie</u> exclusifs que j'envoie
+                    UNIQUEMENT sur <strong>Les mails Insomniaques™</strong>
+                </li>
+            </ul>
+        </div>
+        <div>
+<!--             <button class="subscribeButton" onclick="document.querySelector('header .popUpEmailForm').style['display'] = 'inherit'">
+                Je rejoins le programme <br><span>(cliquez-moi !)</span>
+            </button> -->
+            <div id="crossPopUpWrapper">
+            <button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none"'>XXXXXXXXXXXXX</button></div>
+<a href="#" class="systeme-show-popup-1410341" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "initial"'>Cliquez ici</a><script id="form-script-tag-1410341" src="https://systeme.io/public/remote/page/205531059b2ecdb1f943e849d40197e9a69e60d.js"></script>
+ <!--            <script type="text/javascript">
+            window.onload = document.querySelector('header .popUpEmailForm').style['display'] = 'none!important';
+            console.log('script deuxieme script a run');
+            </script> -->
+        </div>
+        <script type="text/javascript"></script>
+       
+      <!--   <script type="text/javascript">document.querySelector("div > div > iframe").parentElement.parentElement.style.background = "rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%";</script> -->
+    </header>
+    <div class="content">
+        <div>
+            <h2 class="title">Ce que tu vas découvrir:</h2>
+        </div>
+        <div>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module1 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°1</h2>
+                    <p>INSOMNIE VS INSOMNIE CHRONIQUE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module2 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°2</h2>
+                    <p>LES 3 MÉCANISMES INCOMPRIS DU SOMMEIL</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module3 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°3</h2>
+                    <p>LES 4 ÉTAPES INÉVITABLES DE L'INSOMNIE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module4 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°4</h2>
+                    <p>LE MYTHE DES 8H</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module5 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°5</h2>
+                    <p>LA PREMIERE ÉTAPE POUR SORTIR DU CERCLE VICIEUX</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module6 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°6</h2>
+                    <p>LES MAUVAIS CONSEILS À NE PAS ÉCOUTER</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module7 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°7</h2>
+                    <p>LES BONS CONSEILS À ÉCOUTER</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module8 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°8</h2>
+                    <p>LA TECHNIQUE DE L'ANCRAGE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module9 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°9</h2>
+                    <p>FAIRE LA PAIX AVEC SON LIT</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module10 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°10</h2>
+                    <p>5 MÉTHODES PSYCHOLOGIQUES ANTI-INSOMNIE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module11 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°11</h2>
+                    <p>CE QUE TU DOIS ABSOLUMENT SAVOIR SUR L'INSOMNIE</p>
+                    <div>
+            </article>
+            <article>
+                <div class="mediaWrapper">
+                    <img class="mediaContent" src="./Images/module12 COMPRESSED - CUTER.png" />
+                </div>
+                <div class="moduleInfo">
+                    <h2>Module n°12</h2>
+                    <p>VIDÉO BONUS: [CONTENU EXCLUSIF]<br><span>(Disponible UNIQUEMENT en rejoignant le cours)</span></p>
+                    <div>
+            </article>
+        </div>
+        <footer>
+<!--             <button onclick="document.querySelector('footer .popUpEmailForm').style['visibility'] = 'initial'" class="subscribeButton">
+                Je rejoins le programme <br><span>(cliquez-moi !)</span>
+            </button> -->
+            <div class="popUpEmailForm">
+                <script id="form-script-tag-1408328" src="https://systeme.io/public/remote/page/20521618426548db18fa8e9ce914595565f7c22.js"></script>
+            </div>
+  <!--           <script type="text/javascript">
+            document.querySelector('footer .popUpEmailForm').style['visibility'] = 'hidden'
+            </script> -->
+        </footer>
+    </div>
+    <style type="text/css">
+    	
+    	.sc-jKJlTe{
+
+    		width: auto!important;
+    	}
+
+    </style>
+</body>
+
+</html>
