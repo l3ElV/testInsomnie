@@ -126,7 +126,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 document.querySelector("div > div > iframe").parentElement.parentElement.style.transform = "scale(1.6)";
 
                 let zIndexDouilleur = document.querySelector("div > div > iframe").parentElement.parentElement.style.zIndex;
-                document.querySelector('#crossPopUp').style.zIndex = zIndexDouilleur + 5;
+                document.querySelector('#crossPopUpWrapper').style.zIndex = parseInt(zIndexDouilleur, 10) + 5;
 
             });
         });
