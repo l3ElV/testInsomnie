@@ -192,13 +192,15 @@ position: relative;
 display: block;
 max-width: 600px;
 max-height: 100%;
-width: 100%;
+width: 100vw;
+height: 317px;
 
 }
 
 #crossPopUp{
 
     pointer-events: initial;
+    transform: scale(0.5);
 }
 
 @media screen and (min-width: 1200px) {
