@@ -175,7 +175,7 @@ footer .subscribeButton span {
     transform: scale(2);
     color: red;
     font-weight: bold;
-    z-index: 999999999;
+    z-index: 99;
 }
 
 @media screen and (min-width: 1200px) {
