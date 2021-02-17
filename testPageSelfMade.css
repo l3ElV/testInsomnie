@@ -196,6 +196,11 @@ width: 100%;
 
 }
 
+#crossPopUp{
+
+    pointer-events: initial;
+}
+
 @media screen and (min-width: 1200px) {
     :root {
         --scale: 0.55;
