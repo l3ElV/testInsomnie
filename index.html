@@ -93,11 +93,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div id="crossPopUpWrapper">
                 <div id="fakePopUpIframe">
                 	<div id="fakeDivWrapper">
-                    	<button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none"'>X</button>
+                    	<button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none";document.querySelector("#crossPopUpWrapper").style.display = "none";'>X</button>
                 	</div>
                 </div>
             </div>
-            <a href="#" class="systeme-show-popup-1410341" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "initial";'>Cliquez ici</a>
+            <a href="#" class="systeme-show-popup-1410341" onclick='document.querySelector("#crossPopUpWrapper").style.display = "initial";document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "initial";'>Cliquez ici</a>
             <script id="form-script-tag-1410341" src="https://systeme.io/public/remote/page/205531059b2ecdb1f943e849d40197e9a69e60d.js"></script>
             <!--            <script type="text/javascript">
             window.onload = document.querySelector('header .popUpEmailForm').style['display'] = 'none!important';
