@@ -164,9 +164,13 @@ footer .subscribeButton span {
     margin: 50px 0px;
 }
 #crossPopUpWrapper {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+background: rgba(20, 52, 253, 0.5) none repeat scroll 0% 0%;
+position: fixed;
+overflow-y: scroll;
+inset: 0px;
+width: 100%;
+display: initial;
+transform: scale(1.6);
 }
 #fakePopUpIframe {
 display: block;
