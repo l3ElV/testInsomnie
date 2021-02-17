@@ -174,7 +174,6 @@ footer .subscribeButton span {
 }
 
 #crossPopUpWrapper {
-    background: rgba(20, 52, 253, 0.5) none repeat scroll 0% 0%;
     position: fixed;
     overflow-y: scroll;
     inset: 0px;
