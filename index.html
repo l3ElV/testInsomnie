@@ -1,272 +1,104 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>mon test slefmade page</title>
-    <!-- css formater -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" />
-    <link href="./testPageSelfMade.css" rel="stylesheet" />
-    <!-- Foot Google Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <!-- ============================================GOOGLE============================================ -->
-    <!-- Global site tag (gtag.js) - Google Ads: 476652110 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-476652110"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-476652110');
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link
+      rel="canonical"
+      href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/"
+    />
+    <link
+      rel="canonical"
+      href="https://www.example.com/url/to/amp/document.html"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": ["logo.jpg"]
+      }
     </script>
-    <!-- Event snippet for Page vue- FR-DISPLAY-Campagne Express conversion page -->
-    <script>
-    gtag('event', 'conversion', { 'send_to': 'AW-476652110/OkK4CIu95PUBEM7EpOMB' });
-    </script>
-    <!-- Event snippet for Sign-up FR-DISPLAY-Campagne Express 13.02  2eme Round conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-    function gtag_report_conversion(url) {
-        var callback = function() {
-            if (typeof(url) != 'undefined') {
-                window.location = url;
-            }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-476652110/SWeECJHP5PUBEM7EpOMB',
-            'event_callback': callback
-        });
-        return false;
-    }
-    </script>
-    <!-- ============================================GOOGLE END============================================ -->
-    <!--First two scrips = cookie dependencies-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
-</head>
-
-<body>
-    <header>
-        <div>
-            <p class="title">
-                Comment
-                <u>arrêter les insomnies</u> et retrouver un
-                <u>sommeil réparateur</u>
-            </p>
-            <h2 class="subtitle">
-                Ma méthode scientifique en 11 vidéos GRATUITES
-            </h2>
-        </div>
-        <div>
-            <video autoplay="true" muted="true" controls preload="auto">
-                <source src="./présentationOld.mp4" type="video/mp4">
-            </video>
-            <button class="subscribeButton" onclick="document.querySelector('video').muted = !document.querySelector('video').muted;">METTRE LE SON</button>
-        </div>
-        <div class="contentSumUp">
-            <h2 class="title">Ce Que Tu Vas Obtenir:</h2>
-            <ul>
-                <li>
-                    <strong>📚 7 outils SCIENTIFIQUES </strong> pour un
-                    <u>sommeil profond et réparateur</u>
-                </li>
-                <li>
-                    <strong>📑 Mes Protocoles </strong>pour éliminer la
-                    <u>peur de ne pas réussir à dormir</u>
-                </li>
-                <li>
-                    <strong>⛔ Comment STOPPER </strong><u>le cercle vicieux</u>
-                    de l'insomnie
-                </li>
-                <li>
-                    <strong>💌 BONUS: </strong>
-                    <u>Mes conseils Anti-Insomnie</u> exclusifs que j'envoie
-                    UNIQUEMENT sur <strong>Les mails Insomniaques™</strong>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <!--             <button class="subscribeButton" onclick="document.querySelector('header .popUpEmailForm').style['display'] = 'inherit'">
-                Je rejoins le programme <br><span>(cliquez-moi !)</span>
-            </button> -->
-            <div id="crossPopUpWrapper">
-                <div id="fakePopUpIframe">
-                	<div id="fakeDivWrapper">
-                    	<button class="subscribeButton" id="crossPopUp" onclick='document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "none";document.querySelector("#crossPopUpWrapper").style.display = "none";'>X</button>
-                	</div>
-                </div>
-            </div>
-            <a href="#" class="systeme-show-popup-1410341" onclick='document.querySelector("#crossPopUpWrapper").style.display = "initial";document.querySelector("div > div > iframe").parentElement.parentElement.style.display = "initial";'>Cliquez ici</a>
-            <script id="form-script-tag-1410341" src="https://systeme.io/public/remote/page/205531059b2ecdb1f943e849d40197e9a69e60d.js"></script>
-            <!--            <script type="text/javascript">
-            window.onload = document.querySelector('header .popUpEmailForm').style['display'] = 'none!important';
-            console.log('script deuxieme script a run');
-            </script> -->
-        </div>
-        <script type="text/javascript"></script>
-        <!--   <script type="text/javascript">document.querySelector("div > div > iframe").parentElement.parentElement.style.background = "rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%";</script> -->
-        <script type="text/javascript">
-        //handle body inline styles changes
-        var observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutationRecord) {
-                document.querySelector('body').style.position = "initial";
-
-            });
-        });
-
-        var target = document.querySelector('body');
-        observer.observe(target, { attributes: true, attributeFilter: ['style'] });
-
-        //handle iframe parent parentElement inline styles changes
-
-        var observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutationRecord) {
-
-                document.querySelector("div > div > iframe").parentElement.parentElement.style.transform = "scale(1.6)";
-
-                let zIndexDouilleur = document.querySelector("div > div > iframe").parentElement.parentElement.style.zIndex;
-                document.querySelector('#crossPopUpWrapper').style.zIndex = parseInt(zIndexDouilleur, 10) + 5;
-
-            });
-        });
-
-        var target = document.querySelector("div > div > iframe").parentElement.parentElement;
-        observer.observe(target, { attributes: true, attributeFilter: ['style'] });
-        </script>
-    </header>
-    <div class="content">
-        <div>
-            <h2 class="title">Ce que tu vas découvrir:</h2>
-        </div>
-        <div>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module1 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°1</h2>
-                    <p>INSOMNIE VS INSOMNIE CHRONIQUE</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module2 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°2</h2>
-                    <p>LES 3 MÉCANISMES INCOMPRIS DU SOMMEIL</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module3 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°3</h2>
-                    <p>LES 4 ÉTAPES INÉVITABLES DE L'INSOMNIE</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module4 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°4</h2>
-                    <p>LE MYTHE DES 8H</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module5 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°5</h2>
-                    <p>LA PREMIERE ÉTAPE POUR SORTIR DU CERCLE VICIEUX</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module6 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°6</h2>
-                    <p>LES MAUVAIS CONSEILS À NE PAS ÉCOUTER</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module7 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°7</h2>
-                    <p>LES BONS CONSEILS À ÉCOUTER</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module8 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°8</h2>
-                    <p>LA TECHNIQUE DE L'ANCRAGE</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module9 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°9</h2>
-                    <p>FAIRE LA PAIX AVEC SON LIT</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module10 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°10</h2>
-                    <p>5 MÉTHODES PSYCHOLOGIQUES ANTI-INSOMNIE</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module11 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°11</h2>
-                    <p>CE QUE TU DOIS ABSOLUMENT SAVOIR SUR L'INSOMNIE</p>
-                    <div>
-            </article>
-            <article>
-                <div class="mediaWrapper">
-                    <img class="mediaContent" src="./Images/module12 COMPRESSED - CUTER.png" />
-                </div>
-                <div class="moduleInfo">
-                    <h2>Module n°12</h2>
-                    <p>VIDÉO BONUS: [CONTENU EXCLUSIF]<br><span>(Disponible UNIQUEMENT en rejoignant le cours)</span></p>
-                    <div>
-            </article>
-        </div>
-        <footer>
-            <!--             <button onclick="document.querySelector('footer .popUpEmailForm').style['visibility'] = 'initial'" class="subscribeButton">
-                Je rejoins le programme <br><span>(cliquez-moi !)</span>
-            </button> -->
-            <div class="popUpEmailForm">
-                <script id="form-script-tag-1408328" src="https://systeme.io/public/remote/page/20521618426548db18fa8e9ce914595565f7c22.js"></script>
-            </div>
-            <!--           <script type="text/javascript">
-            document.querySelector('footer .popUpEmailForm').style['visibility'] = 'hidden'
-            </script> -->
-        </footer>
-    </div>
-    <style type="text/css">
-    .sc-jKJlTe {
-
-        width: auto !important;
-    }
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
     </style>
-</body>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <h1>Welcome to the mobile web</h1>
+    <amp-video
+      controls
+      width="640"
+      height="360"
+      src="/static/inline-examples/videos/kitten-playing.mp4"
+      poster="/static/inline-examples/images/kitten-playing.png"
+    >
+      <div fallback>
+        <p>This browser does not support the video element.</p>
+      </div>
+    </amp-video>
 
+    <a href="#" class="systeme-show-popup-1410341">Cliquez ici</a
+    ><amp-script
+      id="form-script-tag-1410341"
+      src="https://systeme.io/public/remote/page/205531059b2ecdb1f943e849d40197e9a69e60d.js"
+    ></amp-script>
+  </body>
 </html>
